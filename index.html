@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
    
@@ -51,12 +52,20 @@
             <div class="header__content">
                 <div class="container">
                     <div class="header__content-wrapper">
-                        <a href="#!" class="header__logo">
-                            <img src="./img/logo.png" alt="logo" class="header__logo-img">
-                            <div class="header__logo-text">
-                                Ваш эксперт<br>на рынке <span class="red">3D</span>-техники
+                        <div class="header__mobile-logo">
+                            <div class="header__burger">
+                                <button class="header__burger-btn burger">
+                                    <span class="burger__item"></span>
+                                </button>
                             </div>
-                        </a>
+                            <a href="#!" class="header__logo">
+                                <img src="./img/logo.png" alt="logo" class="header__logo-img">
+                                <div class="header__logo-text">
+                                    Ваш эксперт<br>на рынке <span class="red">3D</span>-техники
+                                </div>
+                            </a>
+                        </div>
+                        
                         <a href="#!" class="header__market">
                                 <img src="./img/yandex.png" alt="yandex market" class="header__market-img">
                         </a>
@@ -100,8 +109,15 @@
                             
                             <a href="#!" class="header__cart-link">
                                 <img src="./img/cart.svg" alt="cart">
-                                Корзина пуста</a>
+                                <span>Корзина пуста</span>
+                            </a>
+
+                                <div class="header__mobile-find">
+                                    <button class="header__mobile-btn"></button>
+                                </div>
                         </div>
+
+                        
                     </div>
                 </div>
                
