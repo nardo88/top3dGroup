@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/Hfont.woff2') format('woff2'),
+        url('../fonts/Hfont.woff') format('woff'),
+        url('../fonts/Hfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Black.woff') format('woff'),
+        url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
