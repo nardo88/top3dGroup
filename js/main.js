@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const headerForm = document.querySelector('.header__form');
         const headerLogo = document.querySelector('.header__logo');
         const headerCartLink = document.querySelector('.header__cart-link');
+        const headerModileData = document.querySelector('.header__modile-data');
 
         const toggleMenu = () => {
             burger.classList.toggle('open-burger');
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerForm.classList.toggle('open-find');
             headerLogo.classList.toggle('hide');
             headerCartLink.classList.toggle('hide-cart');
+            headerModileData.classList.toggle('hide');
             
         }
 
@@ -37,6 +39,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     menu();
+
+    const media = () => {
+        const headerFormInput = document.querySelector('.header-form__input');
+
+        window.addEventListener('resize', () => {
+            if (innerWidth < 768){
+                headerFormInput.placeholder = 'я ищу';
+            } else {
+                headerFormInput.placeholder = 'Введите запрос, например, Formlabs Form 2';
+            }
+        })
+
+        if (innerWidth < 768){
+            headerFormInput.placeholder = 'я ищу';
+        } else {
+            headerFormInput.placeholder = 'Введите запрос, например, Formlabs Form 2';
+        }
+    }
+
+    media();
 
 
 

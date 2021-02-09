@@ -14,6 +14,9 @@
     .container {
         max-width: 990px;
     }
+    .products__link {
+        font-size: 9px;
+    }
 }
 
 @media (max-width: 1190px) {
@@ -63,9 +66,7 @@
         }
     }
 
-    .products__link {
-        font-size: 9px;
-    }
+   
 
     .send-city {
         &__title {
@@ -154,9 +155,7 @@
         display: block;
     }
 
-    .hide {
-        display: none;
-    }
+    
 
 
 }
@@ -171,7 +170,9 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+}
 
 @media (max-width: 720px) {
     .header__cart-link {
@@ -192,6 +193,20 @@
             display: none;
         }
     }
+
+    .header{
+        &__modile-data{
+            display: flex;
+        }
+
+        &__logo-text{
+            display: none;
+        }
+
+        &__logo{
+            margin-right: 0;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -202,8 +217,71 @@
     .hide-cart{
         display: none;
     }
+
+    .header-form{
+        margin-right: 0;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .header{
+        &__cart-link{
+            width: 35px;
+            height: 31px;
+        }
+        &__mobile-btn{
+            margin-left: 15px;
+        }
+        &__modile-working-mode{
+            max-width: 100px;;
+        }
+        &-form__buton{
+            font-size: 0;
+            &:after{
+                content: '';
+                display: block;
+                width: 15px;
+                position: absolute;
+                height: 2px;
+                background: #da2128;
+                transform: rotate(-45deg);
+                right: 5px;
+                bottom: 10px;
+            }
+
+            &:before{
+                content: '';
+                display: block;
+                width: 15px;
+                position: absolute;
+                height: 2px;
+                background: #da2128;
+                transform: rotate(45deg);
+                right: 5px;
+                top: 10px;
+            }
+        }
+    }
+
+    .burger{
+        margin-right: 20px;
+        &__item{
+            width: 20px;
+            &:after{
+                width: 20px;
+                bottom: -6px;
+            }
+            &:before{
+                width: 20px;
+                top: -6px;
+            }
+        } 
+    }
+
+}
 
 @media (max-width: 320px) {}
+
+.hide {
+    display: none;
+}
