@@ -463,9 +463,9 @@
 
     &__category {
 
-        &:hover .products__subcategory {
-            display: block;
-        }
+        // &:hover .products__subcategory {
+        //     display: block;
+        // }
     }
 
     // .products__link
@@ -641,4 +641,8 @@
         }
 
     }
+}
+
+.active{
+    display: block; 
 }
