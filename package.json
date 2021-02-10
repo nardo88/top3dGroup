@@ -1,0 +1,26 @@
+{
+  "name": "top3dGroup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.config.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nardo88/top3dGroup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nardo88/top3dGroup/issues"
+  },
+  "homepage": "https://github.com/nardo88/top3dGroup#readme",
+  "devDependencies": {
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
